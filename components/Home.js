@@ -57,11 +57,13 @@ class Home extends Component {
     return (
       <View>
         <Logo />
-        <Calculator
-          handleAmount={this.handleAmount}
-          handleVice={this.handleVice}
-          handleSubmitButton={this.handleSubmitButton}
-        />
+        {!this.state.viceInput ? (
+          <Calculator
+            handleAmount={this.handleAmount}
+            handleVice={this.handleVice}
+            handleSubmitButton={this.handleSubmitButton}
+          />
+        ) : null}
       </View>
     );
   }
