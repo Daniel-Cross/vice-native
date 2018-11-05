@@ -1,18 +1,16 @@
 {
   "name": "empty-project-template",
-  "main": "node_modules/expo/AppEntry.js",
   "private": true,
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "eject": "expo eject"
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios"
   },
   "dependencies": {
-    "expo": "^31.0.2",
     "expo-cli": "^2.2.5",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz",
+    "react-native-navigation": "^2.1.2",
     "react-native-spinkit": "^1.1.1"
   },
   "devDependencies": {
